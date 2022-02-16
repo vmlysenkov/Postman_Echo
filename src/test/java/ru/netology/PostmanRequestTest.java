@@ -15,8 +15,6 @@ public class PostmanRequestTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-//                .assertThat()
-                .body(  "", Matchers.equalTo("") );
-
+                .body(  "data", Matchers.equalTo("some data") );
     }
 }
